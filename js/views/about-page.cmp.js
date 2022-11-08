@@ -10,14 +10,14 @@ export default {
         </section>
     `,
     created() {
-        const aboutInterval = function() {
-            console.log('aboutInterval')
-        }
-        setInterval(aboutInterval, 1000)
+        // const aboutInterval = function() {
+        //     console.log('aboutInterval')
+        // }
+        // setInterval(aboutInterval, 1000)
     },
     unmounted() {
-        clearInterval(this.aboutInterval) // not working
-        console.log('Stop interval');
+        // clearInterval(this.aboutInterval) // not working
+        // console.log('Stop interval');
     },
     methods: {
         // emit(){
@@ -26,7 +26,7 @@ export default {
     },
     computed: {
         imgUrl() {
-            return '../../img/miss-books.jpg'
+            return '../img/miss-books.jpg'
         }
     }
 }
