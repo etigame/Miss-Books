@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-footer, .app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7.5vh;
+    background-color: rgb(51, 74, 202);
+    color: white;
+    padding: 10px;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+}
+.app-header nav {
+    display: flex;
+    gap: 10px;
+}
+
+.app-header nav a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.app-header .router-link-exact-active {
+    color: orange;
+}
+
+.books-app {
+    min-height: 85vh;
+    padding: 10px;
+}
+
+.book-list ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    list-style-type: none;
+}
+
+.book-list ul li {
+    display: grid;
+    background-color: rgb(242, 156, 36);
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.actions {
+    display: grid;
+    place-content: center;
+}
+
+.book-preview img {
+    height: 150px;
+    width: 75px;
+    object-fit: cover;
+}
+
+.about-page {
+    text-align: center;
+    height: 85vh;
+}
+
+.about-page h1 {
+    padding: 10px;
+}
+
+.about-page img {
+    height: 50vh;
+    object-fit: cover;
+    margin-block-end: 10px;
+}
+
+.user-msg {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
