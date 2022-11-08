@@ -37,6 +37,7 @@ export default {
                 </li>
             </ul>
         </section>
+        <!-- check -->
         <!-- <button @click="$emit('close')">Close</button> -->
         <router-link to="/book" :book="book">Back</router-link> 
     </section>
