@@ -18,7 +18,7 @@ export default {
         <p>Authors: {{ displayAuthors }}</p>
         <p>Published: {{ book.publishedDate }}, {{ bookState }}</p>
         <p>Price: <span :style="stylePrice">{{ displayAmount }}</span></p>
-        <img v-if="book.listPrice.isOnSale" :src="saleImg" alt="" />
+        <img v-if="book.listPrice.isOnSale" src="img/sale.png" alt="" />
         <p>Language: {{ book.language }}</p>
         <p>Page count: {{ book.pageCount }}, {{ readingLength }}</p>
         <p>Categories: {{ displayCategories }}</p>
@@ -109,9 +109,6 @@ export default {
     stylePrice() {
       if (this.book.listPrice.amount > 150) return 'color: red'
       if (this.book.listPrice.amount < 20) return 'color: green'
-    },
-    saleImg() {
-      return '../../img/sale.png'
     },
     displayAuthors() {
       return this.book.authors.join()
